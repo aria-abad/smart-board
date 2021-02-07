@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Smart Board Project</h1>
+      <h1>React Smart Board Project</h1>
     </div>
   );
 }
