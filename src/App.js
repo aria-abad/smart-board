@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import './App.css';
+import Navbar from './components/Navbar'
 
 function App() {
 
@@ -10,10 +11,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1>React Smart Board Project</h1>
-      <h2>Aria</h2>
-      <h3>Lab Project</h3>
-      <h3>Feb 2021</h3>
+      <Navbar />
+      <h4>React Smart Board Project</h4>
+      <h5>Feb 2021</h5>
     </div>
   );
 }
