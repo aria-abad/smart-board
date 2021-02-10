@@ -6,16 +6,17 @@ import ProjecList from './components/ProjecList';
 
 function App() {
 
-  const [board, setBoard] = useState([
-    {pCyle: "SSU28", instrumentType: "Cadiere x4", autoClaveCycle: "WO", completionTime:"W", contactPerson: "Halie"},
-    {pCyle: "SSU12", instrumentType: "Refurb MSCND 13 - 22", autoClaveCycle: "WO", completionTime:"", contactPerson: "nICK"}
+  const [projects, setProjects] = useState([
+    {id: 1, priority: 3, cycle: 'SSU28', instrument: 'Cadiere x4', autoclave: 'WO', completion: {soak: '--', medisafe:'--', autoclave:'--'}, note:'with owner', contact:'Halie'},
+    {id: 2, priority: 1, cycle: 'SSU2', instrument: 'Xi Tenaculum 1-6 (Green)', autoclave: 'WO', completion: {soak: '--', medisafe:'--', autoclave:'--'}, note:'', contact:'Aparna'},
+    {id: 3, priority: 2, cycle: '(4)/5', instrument: 'Skywalker LND (Gen 11)', autoclave: 'WO', completion: {soak: '--', medisafe:'--', autoclave:'--'}, note:'waiting for pickup', contact:'David M.'}
   ])
 
   return (
     <div className="App">
       <Navbar />
       <div className="content">
-        <ProjecList />
+        <ProjecList projects={projects} />
       </div>      
     </div>
   );
