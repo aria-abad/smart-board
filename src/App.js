@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import './App.css';
 import Navbar from './components/Navbar'
+import ProjecList from './components/ProjecList';
 // import {v4 as uuidv4} from 'uuid';
 
 function App() {
@@ -13,8 +14,9 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <h4>React Smart Board Project</h4>
-      <h5>Feb 2021</h5>
+      <div className="content">
+        <ProjecList />
+      </div>      
     </div>
   );
 }
