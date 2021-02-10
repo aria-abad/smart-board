@@ -3,9 +3,9 @@ import Projec from './Projec'
 
 export default function ProjecList({ projects }) {
     return (
-        <div>
+        <div className="projectList">
             <h1>Project List</h1>
-            <Projec />
+            {projects.map(project => <Projec key={project.id} project={project} /> )}
         </div>
     )
 }
