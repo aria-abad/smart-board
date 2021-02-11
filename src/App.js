@@ -16,7 +16,7 @@ function App() {
       <Navbar />
       <div className="content">
         <ProjecList projects={projects} />
-      </div>      
+      </div>
     </div>
   );
 }
