@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/smart-board/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/smart-board/static/js/main.358da042.chunk.js",
-    "main.js.map": "/smart-board/static/js/main.358da042.chunk.js.map",
+    "main.css": "/smart-board/static/css/main.a5290a46.chunk.css",
+    "main.js": "/smart-board/static/js/main.02771f6e.chunk.js",
+    "main.js.map": "/smart-board/static/js/main.02771f6e.chunk.js.map",
     "runtime-main.js": "/smart-board/static/js/runtime-main.55a37b8d.js",
     "runtime-main.js.map": "/smart-board/static/js/runtime-main.55a37b8d.js.map",
-    "static/js/2.03f819c3.chunk.js": "/smart-board/static/js/2.03f819c3.chunk.js",
-    "static/js/2.03f819c3.chunk.js.map": "/smart-board/static/js/2.03f819c3.chunk.js.map",
+    "static/js/2.587d7393.chunk.js": "/smart-board/static/js/2.587d7393.chunk.js",
+    "static/js/2.587d7393.chunk.js.map": "/smart-board/static/js/2.587d7393.chunk.js.map",
     "index.html": "/smart-board/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/smart-board/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.03f819c3.chunk.js.LICENSE.txt": "/smart-board/static/js/2.03f819c3.chunk.js.LICENSE.txt"
+    "static/css/main.a5290a46.chunk.css.map": "/smart-board/static/css/main.a5290a46.chunk.css.map",
+    "static/js/2.587d7393.chunk.js.LICENSE.txt": "/smart-board/static/js/2.587d7393.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.55a37b8d.js",
-    "static/js/2.03f819c3.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.358da042.chunk.js"
+    "static/js/2.587d7393.chunk.js",
+    "static/css/main.a5290a46.chunk.css",
+    "static/js/main.02771f6e.chunk.js"
   ]
 }
