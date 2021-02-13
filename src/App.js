@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import Navbar from './components/Navbar'
-import Projecs from './components/Projecs';
+import Projects from './components/Projects';
 import {v4 as uuidv4} from 'uuid';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Navbar />
       <div className="content">
-        <Projecs projects={projects} />
+        <Projects projects = {projects} />
       </div>
     </div>
   );
