@@ -11,8 +11,7 @@ function App() {
     {id: uuidv4(), priority: 2, cycle: '(4)/5', instrument: 'S (Gen 11)', autoclave: 'WO', completion: {soak: '--', medisafe:'--', autoclave:'--'}, note:'waiting for pickup', contact:'David M.'}
   ])
 
-  function handleDelete(id) {
-    console.log('HandleDelete function. ' + id)
+  const handleDelete = (id) => {
     const newProjects = projects.filter(project => project.id !== id);
     setProjects(newProjects);
   }
