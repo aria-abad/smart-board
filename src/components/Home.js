@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectDetails from './ProjectDetails'
 
-export default function Home({ projects, handleDelete }) {
+export default function Home({ projects }) {
     return (
         <div className="projects">
             <h2>Projects</h2>
