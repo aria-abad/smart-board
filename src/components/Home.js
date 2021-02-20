@@ -5,7 +5,7 @@ export default function Home({ projects, handleDelete }) {
     return (
         <div className="projects">
             <h2>Projects</h2>
-            {projects.map(project => <ProjectDetails key={project.id} project={project} handleDelete={handleDelete} /> )}
+            {projects.map(project => <ProjectDetails key={project.id} project={project} /> )}
         </div>
     )
 }
