@@ -1,32 +1,10 @@
-import {useState, useEffect} from 'react';
 import Navbar from './components/Navbar'
 import Home from './components/Home';
+import useFetch from './components/useFetch';
 // import {v4 as uuidv4} from 'uuid';
 
 function App() {
-
-  const [projects, setProjects] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
-  
-  useEffect(() => {
-    fetch('http://localhost:8000/projects')
-      .then(res => {
-        if(!res.ok){
-          throw Error('Could not Fetch the projects from the resource');
-        }
-        return res.json();
-      })
-      .then(data => {
-        setProjects(data);
-        setIsLoading(false);
-        setError(null)
-      })
-      .catch(err => {
-        setError(err.message);
-        setIsLoading(false);
-      })
-  }, [])
+  const {data: projects, isLoading, error} = useFetch('http://localhost:8000/projects');
 
   return (
     <div className="Home">
