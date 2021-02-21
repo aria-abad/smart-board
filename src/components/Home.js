@@ -1,11 +1,17 @@
 import React from 'react'
 import ProjectDetails from './ProjectDetails'
+import useFetch from './useFetch';
 
-export default function Home({ projects }) {
+
+export default function Home() {
+    const {data: projects, isLoading, error} = useFetch('http://localhost:8000/projects');
+
     return (
-        <div className="projects">
+        <div className="home">
             <h2>Projects</h2>
-            {projects.map(project => <ProjectDetails key={project.id} project={project} /> )}
+            {error && <div>{error}</div>}
+            {isLoading && <div>Loading...</div>}
+            {projects && <ProjectDetails projects = {projects} />}
         </div>
     )
 }

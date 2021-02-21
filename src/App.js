@@ -1,20 +1,23 @@
 import Navbar from './components/Navbar'
 import Home from './components/Home';
-import useFetch from './components/useFetch';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 // import {v4 as uuidv4} from 'uuid';
 
 function App() {
-  const {data: projects, isLoading, error} = useFetch('http://localhost:8000/projects');
 
   return (
-    <div className="Home">
-      <Navbar />
-      <div className="content">
-        {error && <div>{error}</div>}
-        {isLoading && <div>Loading...</div>}
-        {projects && <Home projects = {projects} />}
+    <Router>
+      <div className="Home">
+        <Navbar />
+        <div className="content">
+          <Switch>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
