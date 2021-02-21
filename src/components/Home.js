@@ -1,5 +1,5 @@
 import React from 'react'
-import ProjectDetails from './ProjectDetails'
+import ProjectList from './ProjectList'
 import useFetch from './useFetch';
 
 
@@ -11,7 +11,7 @@ export default function Home() {
             <h2>Projects</h2>
             {error && <div>{error}</div>}
             {isLoading && <div>Loading...</div>}
-            {projects && <ProjectDetails projects = {projects} />}
+            {projects && <ProjectList projects = {projects} />}
         </div>
     )
 }
