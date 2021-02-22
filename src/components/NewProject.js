@@ -1,22 +1,42 @@
 import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom';
 
 export default function NewProject() {
-    const [title, setTitle] = useState('');
+    const [instrument, setInstrument] = useState('');
     const [priority, setPriority] = useState('');
     const [autoclave, setAutoclave] = useState('');
     const [contact, setContact] = useState('');
     const [note, setNote] = useState('');
+    const [isLoading, setIsLoading] = useState(false);
+    const history = useHistory();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const project = { instrument, priority, autoclave, contact, note };
+
+        setIsLoading(true);
+
+        fetch('http://localhost:8000/projects', {
+            method: 'POST',
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(project)
+        }).then(() => {
+            console.log('new blog added.');
+            setIsLoading(false);
+            history.push('/');
+        })
+    }
 
     return (
         <div className="new-project">
             <h2>Add a New Project</h2>
-            <form>
+            <form onSubmit = {handleSubmit}>
                 <label>Project title:</label>
                 <input 
                     type="text"
                     required
-                    value = {title}
-                    onChange = {(e) => setTitle(e.target.value)}
+                    value = {instrument}
+                    onChange = {(e) => setInstrument(e.target.value)}
                 />
                 <label>Priority:</label>
                 <input 
@@ -45,12 +65,8 @@ export default function NewProject() {
                     value = {note}
                     onChange = {(e) => setNote(e.target.value)}
                 ></textarea>
-                <button>Add Project</button>
-                <p>{ title }</p>
-                <p>{ priority }</p>
-                <p>{ autoclave }</p>
-                <p>{ contact }</p>
-                <p>{ note }</p>
+                { !isLoading && <button>Add Project</button> }
+                { isLoading && <button disabled>Adding Project...</button> }
             </form>
         </div>
     )
