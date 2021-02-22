@@ -3,6 +3,7 @@ import Home from './components/Home';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import NewProject from './components/NewProject';
 import ProjectDetails from './components/ProjectDetails';
+import NotFound from './components/NotFound';
 
 function App() {
 
@@ -20,6 +21,9 @@ function App() {
             </Route>
             <Route path="/projects/:id">
               <ProjectDetails />
+            </Route>
+            <Route path="*">
+              <NotFound />
             </Route>
           </Switch>
         </div>
