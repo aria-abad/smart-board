@@ -35,6 +35,14 @@
       "autoclaveCompletion": "",
       "note": "waiting for pickup",
       "contact": "David M."
+    },
+    {
+      "instrument": "MND",
+      "priority": "1",
+      "autoclave": "WO",
+      "contact": "Aparna",
+      "note": "Half manual, half automation",
+      "id": 4
     }
   ]
 }
