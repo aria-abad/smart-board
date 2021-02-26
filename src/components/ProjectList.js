@@ -22,12 +22,12 @@
 import React, { useMemo } from 'react';
 import { useTable} from 'react-table';
 import NEW_DATA from './NEW_DATA.json';
-import { COLUMNS } from './columns'
+import { COLUMNS, GROUPED_COLUMNS } from './columns'
 import './table.css'
 
 
 export default function ProjectList() {
-    const columns = useMemo(() => COLUMNS, [])
+    const columns = useMemo(() => GROUPED_COLUMNS, [])
     const data = useMemo(() => NEW_DATA, [])
 
     const {
