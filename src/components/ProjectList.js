@@ -27,7 +27,7 @@ import './table.css'
 
 
 export default function ProjectList() {
-    const columns = useMemo(() => GROUPED_COLUMNS, [])
+    const columns = useMemo(() => COLUMNS, [])
     const data = useMemo(() => NEW_DATA, [])
 
     const {

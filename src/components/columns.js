@@ -4,33 +4,25 @@ export const COLUMNS = [
         accessor: 'id'
     },
     {
-        Header: 'PRIORITY',
+        Header: 'Priority',
         accessor: 'priority'
     },
     {
-        Header: 'INSTRUMENT',
+        Header: 'Instrument',
         accessor: 'instrument'
     },
     {
-        Header: 'CYCLE',
+        Header: 'Cycle',
         accessor: 'cycle'
     },
     {
-        Header: 'AUTOCLAVE',
+        Header: 'Autoclave',
         accessor: 'autoclave'
     },
-    // {
-    //     Header: 'SOAK',
-    //     accessor: 'soakCompletion'
-    // },
-    // {
-    //     Header: 'MEDISAFE',
-    //     accessor: 'medisafeCompletion'
-    // },
-    // {
-    //     Header: 'AUTOCLAVE',
-    //     accessor: 'autoclaveCompletion'
-    // },
+    {
+        Header: 'Completion',
+        accessor: 'Completion'
+    },
     {
         Header: 'NOTE',
         accessor: 'note'

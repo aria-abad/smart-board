@@ -5,9 +5,7 @@
     "instrument": "C x4",
     "cycle": "SSU28",
     "autoclave": "WO",
-    "soakCompletion": "",
-    "medisafeCompletion": "",
-    "autoclaveCompletion": "",
+    "Completion": "Soak 2:10",
     "note": "with owner",
     "contact": "Halie"
   },
@@ -17,9 +15,7 @@
     "instrument": "Xi T 1-6 (Green)",
     "cycle": "SSU2",
     "autoclave": "WO",
-    "soakCompletion": "",
-    "medisafeCompletion": "",
-    "autoclaveCompletion": "",
+    "Completion": "Medisafe 12:30",
     "note": "",
     "contact": "Aparna"
   },
@@ -29,9 +25,7 @@
     "instrument": "S (Gen 11)",
     "cycle": "(4)/5",
     "autoclave": "WO",
-    "soakCompletion": "",
-    "medisafeCompletion": "",
-    "autoclaveCompletion": "",
+    "Completion": "Autoclave 3:50",
     "note": "waiting for pickup",
     "contact": "David M."
   }
