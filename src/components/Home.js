@@ -7,7 +7,7 @@ export default function Home() {
     // const {data: projects, isLoading, error} = useFetch('http://localhost:8000/projects');
 
     return (
-        <div className="home">
+        <div className="projects">
             {/* <h2>Projects</h2> */}
             {/* {error && <div>{error}</div>} */}
             {/* {isLoading && <div>Loading...</div>} */}
