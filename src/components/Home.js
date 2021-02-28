@@ -8,7 +8,7 @@ export default function Home() {
 
     return (
         <div className="home">
-            <h2>Projects</h2>
+            {/* <h2>Projects</h2> */}
             {/* {error && <div>{error}</div>} */}
             {/* {isLoading && <div>Loading...</div>} */}
             {/* {projects && <ProjectList projects = {projects} />} */}
