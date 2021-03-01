@@ -5,7 +5,7 @@
     "instrument": "C x4",
     "cycle": "SSU28",
     "autoclave": "WO",
-    "completionCycle": "Soak",
+    "completionCycle": "Autoclave",
     "completionTime": "2:10",
     "note": "with owner",
     "contact": "Halie"
@@ -16,8 +16,8 @@
     "instrument": "Xi T 1-6 (Green)",
     "cycle": "SSU2",
     "autoclave": "WO",
-    "completionCycle": "Soak",
-    "completionTime": "2:10",
+    "completionCycle": "",
+    "completionTime": "",
     "note": "",
     "contact": "Aparna"
   },
@@ -28,7 +28,7 @@
     "cycle": "(4)/5",
     "autoclave": "WO",
     "completionCycle": "Soak",
-    "completionTime": "2:10",
+    "completionTime": "1:50",
     "note": "waiting for pickup",
     "contact": "David M."
   }

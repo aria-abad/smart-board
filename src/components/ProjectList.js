@@ -43,6 +43,15 @@ export default function ProjectList() {
     } = useTable({
         columns,
         data
+        // data,
+        // initialState: {
+        //     sortBy:[
+        //         {
+        //             id: 'priority',
+        //             desc: true
+        //         }
+        //     ]
+        // }
     })
 
 

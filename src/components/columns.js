@@ -1,7 +1,8 @@
 export const COLUMNS = [
     {
         Header: 'ID',
-        accessor: 'id'
+        accessor: 'id',
+        Cell: e =><a href={'projects/' + e.value}> {e.value} </a>
     },
     {
         Header: 'Priority',
