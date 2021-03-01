@@ -24,7 +24,8 @@
 import React, { useMemo } from 'react';
 import { useTable} from 'react-table';
 import NEW_DATA from './NEW_DATA.json';
-import { COLUMNS, GROUPED_COLUMNS } from './columns'
+// import { COLUMNS, GROUPED_COLUMNS } from './columns'
+import { COLUMNS } from './columns'
 import './table.css'
 
 

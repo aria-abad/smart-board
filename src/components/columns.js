@@ -21,7 +21,7 @@ export const COLUMNS = [
     },
     {
         Header: 'Completion',
-        accessor: 'Completion'
+        accessor: d => `${d.completionCycle} ${d.completionTime}`
     },
     {
         Header: 'NOTE',
