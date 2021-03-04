@@ -31,3 +31,6 @@ table th, tfoot td {
   margin: 30px;
   border: 5px solid black;
 } */
+
+/* Cell: ({ row }) => (<Link to={{pathname:'/editpage/'+`${row.id}`, state :{data : row} } }>{row.id}</Link>) */
+/* Cell: row => <a href={'projects/' + row.value}> {row.value} </a> */

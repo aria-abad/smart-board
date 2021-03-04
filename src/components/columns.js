@@ -1,4 +1,11 @@
+import { Link } from 'react-router-dom'
+
 export const COLUMNS = [
+    {
+        Header: 'ID',
+        accessor: 'id',
+        show: false
+    },
     {
         Header: 'Priority',
         accessor: 'priority'
@@ -6,7 +13,7 @@ export const COLUMNS = [
     {
         Header: 'Instrument',
         accessor: 'instrument',
-        Cell: e => <a href={'projects/' + e.value}> {e.value} </a>
+        Cell: ({ row }) => (<Link to={{pathname:'/editpage/'+`${row.id}`, state :{data : row} } }>{row.id}</Link>)
     },
     {
         Header: 'Cycle',
