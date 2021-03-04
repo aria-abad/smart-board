@@ -6,7 +6,7 @@ export const COLUMNS = [
     {
         Header: 'Instrument',
         accessor: 'instrument',
-        Cell: e =><a href={'projects/' + e.value}> {e.value} </a>
+        Cell: e => <a href={'projects/' + e.value}> {e.value} </a>
     },
     {
         Header: 'Cycle',
