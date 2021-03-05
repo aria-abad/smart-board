@@ -4,7 +4,7 @@ export const COLUMNS = [
     {
         Header: 'ID',
         accessor: 'id',
-        show: false
+        Cell: row => <a href={'projects/' + row.value}> {row.value} </a>
     },
     {
         Header: 'Priority',
@@ -13,7 +13,7 @@ export const COLUMNS = [
     {
         Header: 'Instrument',
         accessor: 'instrument',
-        Cell: ({ row }) => (<Link to={{pathname:'/editpage/'+`${row.id}`, state :{data : row} } }>{row.id}</Link>)
+        Cell: row => (<Link to={{pathname:'/projects/'+`${row.value}`} }>{row.value}</Link>)
     },
     {
         Header: 'Cycle',
