@@ -7,7 +7,7 @@ table {
 
 table td,
 table th {
-  border: 1px solid #ddd;
+  border: 1px solid gray;
   padding: 8px;
 }
 
@@ -19,7 +19,8 @@ table tr:hover {
   background-color: #ddd;
 }
 
-table th, tfoot td {
+/* table th, tfoot td { */
+table th{
   padding-top: 12px;
   padding-bottom: 12px;
   /* text-align: center; */
