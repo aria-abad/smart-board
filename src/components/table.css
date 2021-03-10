@@ -28,6 +28,10 @@ table th{
   color: white;
 }
 
+table tr {
+  line-height: 30px;
+}
+
 /* .projects {
   margin: 30px;
   border: 5px solid black;
